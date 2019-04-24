@@ -7,7 +7,7 @@ export class AuthGuard implements CanActivate {
   constructor(private authService: AuthService) {
   }
 
-  // Check if you are autheticated
+  // Check if you are authenticated
   canActivate() {
     if (this.authService.isAuthenticated()) {
       return true;
