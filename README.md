@@ -2,26 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-## Development server
+The purpose of this project is to serve as the front-end for my bike registration app, which communicates to Spring Boot (the backend).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Service Calls
+I started out by finishing the API calls to the Spring Boot server by adding some service calls to the bike.service file.
 
-## Code scaffolding
+## Added home component and form
+Once that was in place I could then create the home component that would accept the user registration via an html form. This was a little different because I needed to accept user input, do a validation and handle posting the contents back to Spring Boot.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Added view registration component
+I then added another component to handle viewing a specific registration and tied that into the admin list screen.
 
-## Build
+## Add Bootstrap and custom CSS
+To make everything start to look a little more pleasant, I then added some Bootstrap and some of my own custom styling to the application.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Set up a production build
+And finally, I developed a way how to run Angular in a production environment by using a Node Express server and running the production build using the Angular CLI Build Tool.
